@@ -12,7 +12,7 @@
   };
 
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
   //create a root reference 
   var storage = firebase.storage();
@@ -48,6 +48,7 @@
           image.src = url;
           status.innerHTML = ' Download blob or file!'
       }) .catch(function(error){console.log(error)});
-  })
+  });
 
-});
+}());
+
